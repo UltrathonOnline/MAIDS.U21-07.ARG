@@ -38,35 +38,35 @@
         var template = Handlebars.templates['maids']
 
         var filledHandle = template({
-            title: "A very interesting title indeed!",
-            repository: "https://github.com/PERSIMUNE-Health-Informatics/MAIDS-Template",
+            title: "Microbiome, medication and clinical outcomes",
+            repository: "https://github.com/UltrathonOnline/MAIDS.U21-07.ARG",
             authors: [{
                 author: {
-                    firstnames: "John",
-                    lastname: "Doe",
-                    email: "john.doe@somedomain.com",
+                    firstnames: "Henrik",
+                    lastname: "Sengeloev",
+                    email: "Henrik.Sengeloev@regionh.dk",
                 },
             }, {
                 author: {
-                    firstnames: "Jane",
-                    lastname: "Doe",
-                    email: "jane.doe@somedomain.com",
+                    firstnames: "Jens Christian",
+                    lastname: "Noergaard",
+                    email: "Jens.christian.noergaard.01@regionh.dk",
                 },
             }, ],
             scores: {
                 document: {
                     score: "1",
-                    comment: "This is a basic description of the dataset and missing the necessary statistical description to generate a decent synthetic version.",
+                    comment: "None",
                     evaluator: {
-                        entityType: "person",
-                        entityName: "John Doe",
-                        contactName: "John Doe",
-                        contactEmail: "john.doe@somedomain.com",
+                        entityType: "None",
+                        entityName: "None",
+                        contactName: "None",
+                        contactEmail: "None",
                     },
                 },
                 fairness: {
                     score: "?",
-                    comment: "No committee has evaluated this dataset.",
+                    comment: "None",
                     evaluator: {
                         entityType: "None",
                         entityName: "None",
@@ -75,83 +75,53 @@
                     },
                 },
                 magnitude: {
-                    score: "0",
-                    comment: "This example dataset contains no data.",
+                    score: "2",
+                    comment: "None",
                     evaluator: {
-                        entityType: "person",
-                        entityName: "John Doe",
-                        contactName: "John Doe",
-                        contactEmail: "john.doe@somedomain.com",
+                        entityType: "None",
+                        entityName: "None",
+                        contactName: "None",
+                        contactEmail: "None",
                     },
                 },
                 synthetic: {
                     score: "E",
-                    comment: "No synthetic data or scripts to generate such data are included.",
+                    comment: "None",
                     evaluator: {
-                        entityType: "person",
-                        entityName: "John Doe",
-                        contactName: "John Doe",
-                        contactEmail: "john.doe@somedomain.com",
+                        entityType: "None",
+                        entityName: "None",
+                        contactName: "None",
+                        contactEmail: "None",
                     },
                 },
             },
             thematic: {
-                filename: "thematic.png",
+                filename: "thematic.jpg",
             },
-            abstract: "Abstract: This is an example MAIDS document describing an empty dataset. It has been designed for publication within the MAIDS template on github.",
+            abstract: "Based on one of the world’s largest patient cohorts with metagenomic sequenced fecal samples we wanted to describe the interplay between previous treatment with antibiotics and presence of antibiotic resistance genes (ARGs). In order to do this, we have established a bioinformatic pipeline to map antibiotic resistance genes and we have established an automatic way of extracting data on use of antibiotics (anti-bacteria, -virus, -fungi), immunosuppressants and chemotherapy. Moreover, we have detailed data on demographics, clinical outcomes and other microbiome features such as taxonomy.",
             usecases: [{
-                usecase: "An example or a short use case statement.",
-            }, {
-                usecase: "Another example.",
-            }, {
-                usecase: "Include as many use cases as you would like.",
-            }, {
-                usecase: "A good practice is to itemize the uses identified by the main research questions.",
+                usecase: "None",
             }, ],
             research: {
-                main: "This is where you should describe the main research questions for which the dataset was created to answer. Please make it as long as it needs to be and refer to the figures. The use cases above should summarize these questions succinctly.",
-                secondary: "This is where you should describe the research questions that could be answered by this dataset even if it wasn't created for this exact purpose. The use cases above should summarize these questions succinctly."
+                main: "We hypothesize that the functionality of the microbiome in each patient affects clinical and laboratory outcomes and vice versa. In addition to performing conventional taxonomic analysis, metagenomic sequencing offers the possibility to characterize the functional components of microbial samples. Statistically, this strategy offers a potentially more powerful view on the microbiome by collapsing information into functional classes shared across taxa. Biologically, this also provides more interpretable results by identifying common and well-studied processes as likely causal factors. Moreover, we have developed an automized way of extracting and cleaning data on medical ordinations from the EHR. The body of work proposed here will focus on the study of the bacterial functionality of antibiotic resistance, which is both a fundamental and contemporary issue. This approach enables us to address our main research question: Can we use ML on data on antibiotics to predict antibiotic resistance in metagenomic data? And if so, what type of antibiotic has the biggest impact on antibiotic resistance?",
+                secondary: "This data offers the possibility to test many other hypotheses, and the participants in the Ultrathon are welcome to use the data to answer other scientific questions. Below is listed some of our secondary research questions: 1) Can machine learning algorithms predict clinical outcomes (ie. Infectious) based on resistome features? 2) Does adding other microbiome features such as other functionalities or taxonomy improve predictions? 3) Can we create a standardized ML-approach to clean (rule-based) and analyze (PCA, t-SNE, decision trees) raw data on medication?"
             },
             figures: [{
                 figure: {
-                    filename: "example1.jpg",
-                    title: "Figure 1. First example",
-                    legend: "Figure 1's legend."
+                    filename: "Picture1.png",
+                    title: "Microbiome, medication and clinical outcomes",
+                    legend: "Workflow showing the processing 724 fecal samples from 279 HSCT patients with approx. 50,000 medical ordinations."
                 },
             }, {
                 figure: {
-                    filename: "example2.jpg",
-                    title: "Figure 2. Second example",
-                    legend: "Figure 2's legend."
-                },
-            }, {
-                figure: {
-                    filename: "example3.jpg",
-                    title: "Figure 3. Third example",
-                    legend: "Figure 3's legend."
-                },
-            }, {
-                figure: {
-                    filename: "example4.jpg",
-                    title: "Figure 4. Fourth example",
-                    legend: "Figure 4's legend."
-                },
-            }, {
-                figure: {
-                    filename: "example5.jpg",
-                    title: "Figure 5. Fifth example",
-                    legend: "Figure 5's legend."
-                },
-            }, {
-                figure: {
-                    filename: "example6.jpg",
-                    title: "Figure 6. Sixth example",
-                    legend: "Figure 6's legend."
+                    filename: "Picture2.jpg",
+                    title: "Antibiotic targets and subsequent resistence",
+                    legend: "Available from the Wikipedia article on antibiotic resistence."
                 },
             }, ],
             subsetAssociations: {
-                filename: "datasetassociations.jpg",
-                legend: "An example of how 3 different subsets are connected by a patient identifier. The aspect ratio is 5 to 3.5.",
+                filename: "subset.jpg",
+                legend: "Seven subsets related by pseudonymized patient identifiers. Two subsets are derived from parent subsets.",
             },
             version: {
                 scores: "1",
@@ -162,11 +132,11 @@
             },
             provenance: {
                 template: {
-                    commit: "9e9c6de",
-                    tag: "v0.1-alpha",
+                    commit: "70198f",
+                    tag: "v0.2-alpha",
                 },
                 specification: {
-                    commit: "7581946",
+                    commit: "758194",
                     tag: "v0.1-alpha",
                 },
             },
@@ -179,7 +149,7 @@
                     entries: [{
                         entry: {
                             id: "1",
-                            answer: "None",
+                            answer: "Based on one of the world's largest patient cohorts with metagenomic sequenced fecal samples we wanted to describe the interplay between previous treatment with antibiotics and presence of antibiotic resistance genes (ARGs). In order to do this, we have established a bioinformatic pipeline to map antibiotic resistance genes and we have established an automatic way of extracting data on use of antibiotics (anti-bacteria, -virus, -fungi), immunosuppressants and chemotherapy. Moreover, we have detailed data on demographics, clinical outcomes and other microbiome features such as taxonomy.",
                             by: "",
                             on: "",
                             question: "For what purpose was the dataset created?",
@@ -188,7 +158,7 @@
                     }, {
                         entry: {
                             id: "2",
-                            answer: "None",
+                            answer: "This dataset was created by Persimune Health Informatics (PHI) in collaboration with Department of Haematology, Rigshospitalet, University of Copenhagen, Denmark.",
                             by: "",
                             on: "",
                             question: "Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)?",
@@ -197,7 +167,7 @@
                     }, {
                         entry: {
                             id: "3",
-                            answer: "None",
+                            answer: "Danish national research foundation; Danish Cancer Society;",
                             by: "",
                             on: "",
                             question: "Who funded the creation of the dataset?",
@@ -761,41 +731,83 @@
             definitions: [{
                 definition: {
                     id: "1",
-                    keyword: "A keyword",
-                    definition: "It means this.",
-                    link: "https://link.to.reference/material"
+                    keyword: "ARG",
+                    definition: "Antibiotic resistance gene",
+                    link: "https://card.mcmaster.ca/"
                 }
             }, {
                 definition: {
                     id: "2",
-                    keyword: "Another keyword",
-                    definition: "Another definition without an online reference.",
+                    keyword: "ATC-code",
+                    definition: "All medical drugs have a specific ATC-code based on a tree structure. ",
+                    link: "https://www.whocc.no/atc_ddd_index/"
+                }
+            }, {
+                definition: {
+                    id: "3",
+                    keyword: "EHR",
+                    definition: "Electronic health care record",
+                    link: ""
+                }
+            }, {
+                definition: {
+                    id: "4",
+                    keyword: "HODOR",
+                    definition: "Software to extract medical ordinations from EHR",
+                    link: ""
+                }
+            }, {
+                definition: {
+                    id: "5",
+                    keyword: "aGVHD",
+                    definition: "acute Graft vs. Host disease",
+                    link: ""
+                }
+            }, {
+                definition: {
+                    id: "6",
+                    keyword: "HSCT",
+                    definition: "Haematopoetic stem cell transplant",
+                    link: ""
+                }
+            }, {
+                definition: {
+                    id: "7",
+                    keyword: "PGP",
+                    definition: "PERSIMUNE Gut Profiler. A bioinformatic pipeline that turns fastq files into taxonomy and functional data",
+                    link: ""
+                }
+            }, {
+                definition: {
+                    id: "8",
+                    keyword: "Resistome ",
+                    definition: "Collection of all ARGs found in a one sample",
                     link: ""
                 }
             }, ],
             subsets: [{
                 subset: {
                     id: "1",
-                    name: "Example subset of tabular data",
-                    updated: "2021/03/01",
-                    modality: "TABULAR",
+                    name: "Medication raw",
+                    updated: "2/26/2021",
+                    modality: "Files",
                     format: "CSV",
-                    size: "0",
-                    featureCount: "1",
-                    parentid: "None",
-                    covmat: "No covariance matrix or any other similar data provided.",
-                    modsys: "No models, model systems, or any other statistical description provided.",
-                    purpose: "To provide an example specification for a tabular CSV file.",
+                    size: "279",
+                    featureCount: "4",
+                    parentid: "0",
+                    covmat: "None",
+                    modsys: "None",
+                    purpose: "Detailed information on all ordinations of ATC-codes: J01, J02, J04, J05, A07, R02, L03, L04, H02, L01",
                     link: "",
                     features: [{
                         feature: {
                             id: "1",
-                            date: "2021/03/01",
-                            name: "PID",
-                            values: "1..inf; int",
-                            meaningNaNullNone: "Not possible",
-                            meaningZero: "Not possible",
-                            meaningBlankVoid: "Not possible",
+                            date: "2/10/2021",
+                            name: "Timestamp",
+                            values: "date",
+                            meaningNaNullNone: "date missing",
+                            meaningZero: "Zero means no treatment with drug within period",
+                            meaningBlankVoid: "Not possible in format.",
                             sparsity: "None",
                             mean: "None",
                             std: "None",
@@ -803,9 +815,72 @@
                             median: "None",
                             iqr: "None",
                             parents: "None",
-                            unit: "None",
-                            definition: "Pseudononymized patient identifier.",
-                            purpose: "Act as the primary identifier for joining subsets.",
+                            unit: "YYYY-MM-DD",
+                            definition: "Start date and end date of drug ordination",
+                            purpose: "Used to calculate length of treatment at calculate 'time to fecal sample'. (Obs.: Can be messy and double ordinations may occur. This is mostly solved by cleaning script).",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "2",
+                            date: "2/10/2021",
+                            name: "Data on drug",
+                            values: "Many",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "Different",
+                            definition: "name, ATC-code, dosis, way of administration of specific drug",
+                            purpose: "Used to label drugs",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "3",
+                            date: "2/10/2021",
+                            name: "Ordination-ID",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Each ordination has a specific ID called Best./ord.-ID",
+                            purpose: "Used to identify each ordination",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "4",
+                            date: "2/10/2021",
+                            name: "Patient-ID",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Pseudonymized patient identifier",
+                            purpose: "Used to identify each patient",
                             encoding: "None"
                         }
                     }, ]
@@ -813,42 +888,163 @@
             }, {
                 subset: {
                     id: "2",
-                    name: "Example of unstructured data in files",
-                    updated: "2021/03/01",
-                    modality: "FILES",
-                    format: "something",
-                    size: "0",
-                    featureCount: "0",
-                    parentid: "None",
-                    covmat: "No covariance matrix or any other similar data provided.",
-                    modsys: "No models, model systems, or any other statistical description provided.",
-                    purpose: "To provide an example specification for a folder containing many unstructured data files. Since there is no structure, no features are listed below. If there is a manifest, describe it within another subset and reference this subset as its parent.",
+                    name: "Medication cleaned",
+                    updated: "2/26/2021",
+                    modality: "Files",
+                    format: "CSV",
+                    size: "279",
+                    featureCount: "2",
+                    parentid: "1",
+                    covmat: "None",
+                    modsys: "None",
+                    purpose: "Cleaned mediacl data where timeperiod and drugs of interest can be defined.",
                     link: "",
-                    features: []
+                    features: [{
+                        feature: {
+                            id: "5",
+                            date: "2/10/2021",
+                            name: "Drug data",
+                            values: "many",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Zero means no treatment with drug within period",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "Different",
+                            definition: "Name of drug and days of treatment within desired interval prior to donation of fecal sample",
+                            purpose: "Used to qualify and quantify treatment prior to fecal sample. ATC-codes avaliable: J01, J02, J04, J05, A07, R02, L03, L04, H02, L01 (Antibiotics and immune modulators)",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "6",
+                            date: "2/10/2021",
+                            name: "Sample_ID",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Each fecal sample has a specific ID",
+                            purpose: "Used to map each feacl sample to patient ID and microbiome outcome",
+                            encoding: "None"
+                        }
+                    }, ]
                 }
             }, {
                 subset: {
                     id: "3",
-                    name: "A manifest of data files and their meta-data",
-                    updated: "2021/03/01",
-                    modality: "TABULAR",
-                    format: "XML",
-                    size: "0",
-                    featureCount: "3",
-                    parentid: "2",
-                    covmat: "Irrelevant",
-                    modsys: "Irrelevant",
-                    purpose: "To provide an example of how meta-data on a folder of files could be specified.",
+                    name: "Microbiome_raw",
+                    updated: "1/10/2021",
+                    modality: "Files ",
+                    format: "Fastq",
+                    size: "724",
+                    featureCount: "2",
+                    parentid: "0",
+                    covmat: "None",
+                    modsys: "None",
+                    purpose: "Raw data from illumina sequencing protocol",
                     link: "",
                     features: [{
                         feature: {
-                            id: "1",
-                            date: "2021/03/01",
-                            name: "PID",
-                            values: "1..inf; int",
-                            meaningNaNullNone: "Not possible",
-                            meaningZero: "Not possible",
-                            meaningBlankVoid: "Not possible",
+                            id: "7",
+                            date: "2/10/2021",
+                            name: "Sample_ID",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Each fecal sample has a specific ID",
+                            purpose: "Used to map each feacl sample to patient ID and microbiome outcome",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "8",
+                            date: "2/10/2021",
+                            name: "Fastq files",
+                            values: "A T C or G",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Output from illumina sequencing protocol",
+                            purpose: "The basis of our microbiome research",
+                            encoding: "None"
+                        }
+                    }, ]
+                }
+            }, {
+                subset: {
+                    id: "4",
+                    name: "PGP output",
+                    updated: "2/10/2021",
+                    modality: "Files",
+                    format: "CSV",
+                    size: "724",
+                    featureCount: "6",
+                    parentid: "3",
+                    covmat: "None",
+                    modsys: "None",
+                    purpose: "Files generated by running our PGP pipeline on fastq files",
+                    link: "",
+                    features: [{
+                        feature: {
+                            id: "9",
+                            date: "2/10/2021",
+                            name: "Sample_ID",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Each fecal sample has a specific ID",
+                            purpose: "Used to map each feacl sample to patient ID and microbiome outcome",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "4",
+                            date: "2/10/2021",
+                            name: "Antibiotic resistance genes",
+                            values: "many",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Zero means gene not present",
+                            meaningBlankVoid: "Not possible in format.",
                             sparsity: "None",
                             mean: "None",
                             std: "None",
@@ -857,51 +1053,330 @@
                             iqr: "None",
                             parents: "None",
                             unit: "None",
-                            definition: "Pseudononymized patient identifier.",
-                            purpose: "Act as the primary identifier for joining subsets.",
+                            definition: "For each gene the number of mappings is normalized to the total number for 16s genes in the samples",
+                            purpose: "Used to identify and quantify antibiotic resistance genes in each sample. Normalized to 16s genes to enable comparissons between samples.",
                             encoding: "None"
                         }
                     }, {
                         feature: {
-                            id: "2",
-                            date: "2021/03/01",
-                            name: "Filename",
-                            values: "a-zA-Z; str",
-                            meaningNaNullNone: "NA",
-                            meaningZero: "NA",
-                            meaningBlankVoid: "NA",
-                            sparsity: "NA",
-                            mean: "NA",
-                            std: "NA",
-                            modality: "NA",
-                            median: "NA",
-                            iqr: "NA",
-                            parents: "NA",
+                            id: "5",
+                            date: "2/10/2021",
+                            name: "ARG diversity and gene richness",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
                             unit: "None",
-                            definition: "The filename",
-                            purpose: "Provide name of file",
-                            encoding: "NA"
+                            definition: "Diversity and gene richness calculated based on ARGs in each sample",
+                            purpose: "Used to collapse all ARGs into overall measures comparable between samples.",
+                            encoding: "None"
                         }
                     }, {
                         feature: {
-                            id: "3",
-                            date: "2021/03/01",
-                            name: "Some information",
-                            values: "1..inf; str",
-                            meaningNaNullNone: "NA",
-                            meaningZero: "NA",
-                            meaningBlankVoid: "NA",
-                            sparsity: "NA",
-                            mean: "NA",
-                            std: "NA",
-                            modality: "NA",
-                            median: "NA",
-                            iqr: "NA",
-                            parents: "NA",
-                            unit: "None",
-                            definition: "Some extra information unique to each file",
-                            purpose: "Why this information exists",
-                            encoding: "NA"
+                            id: "6",
+                            date: "2/10/2021",
+                            name: "Taxonomy",
+                            values: "many",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Zero means species not found",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Mapping of reads to bacterial taxa. Normalized to genome length and total amount of non human reads in each sample",
+                            purpose: "Used to identify and quantify bacterial composition of each sample.",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "7",
+                            date: "2/10/2021",
+                            name: "Taxonomical diversity and richness",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Diversity and gene richness calculated based on bacterial species in each sample",
+                            purpose: "Used to collapse all bacterial reads into overall measures comparable between samples.",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "8",
+                            date: "2/10/2021",
+                            name: "Genetic functionality",
+                            values: "many",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Zero means functionality not found",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Name of genetic functionality and number of mappings",
+                            purpose: "Used to identify and quantify bacterial genetic functionalities",
+                            encoding: "None"
+                        }
+                    }, ]
+                }
+            }, {
+                subset: {
+                    id: "5",
+                    name: "Clinical outcomes",
+                    updated: "2/10/2021",
+                    modality: "files",
+                    format: "CSV",
+                    size: "279",
+                    featureCount: "5",
+                    parentid: "0",
+                    covmat: "None",
+                    modsys: "None",
+                    purpose: "Detailed information on clinical outcomes from PERSIMUNE data lake",
+                    link: "",
+                    features: [{
+                        feature: {
+                            id: "9",
+                            date: "2/10/2021",
+                            name: "Patient ID",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Pseudonymized patient identifier",
+                            purpose: "Used to identify each patient",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "10",
+                            date: "2/10/2021",
+                            name: "Sample_ID",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Each fecal sample has a specific ID",
+                            purpose: "Used to map each feacl sample to patient ID and microbiome outcome",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "11",
+                            date: "2/10/2021",
+                            name: "Conditioning",
+                            values: "MAC, MINE, UBC",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Conditioning regiment",
+                            purpose: "Conditioning regiment have impact on the microbiome and numerous other patient outcomes",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "12",
+                            date: "2/10/2021",
+                            name: "GVHD",
+                            values: "Yes/no",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Did the patient devellop graft vs. host disease",
+                            purpose: "aGVHD is a servere complication to HSCT and propably has an extented interplay with the gutmircobiome trough components the immunesystem",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "13",
+                            date: "2/10/2021",
+                            name: "Engraftment",
+                            values: "date",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "YYYY-MM-DD",
+                            definition: "The date of engraftment",
+                            purpose: "The date of engraftment is when the immunesystem is reconstructed after HSCT. This is a curcial timepoint in understanding HSCT-patients.",
+                            encoding: "None"
+                        }
+                    }, ]
+                }
+            }, {
+                subset: {
+                    id: "6",
+                    name: "Demographics",
+                    updated: "2/10/2021",
+                    modality: "files",
+                    format: "CSV",
+                    size: "279",
+                    featureCount: "3",
+                    parentid: "0",
+                    covmat: "None",
+                    modsys: "None",
+                    purpose: "data on social/societal, economic, sex, or historical medical events from LPR",
+                    link: "",
+                    features: [{
+                        feature: {
+                            id: "15",
+                            date: "2/10/2021",
+                            name: "Age",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "yrs",
+                            definition: "Age",
+                            purpose: "Used to stratify for potential age specific traits ",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "16",
+                            date: "2/10/2021",
+                            name: "Sex",
+                            values: "M/F",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Gender",
+                            purpose: "Used to stratify for potential gender specific traits ",
+                            encoding: "None"
+                        }
+                    }, {
+                        feature: {
+                            id: "17",
+                            date: "2/10/2021",
+                            name: "Patient ID",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "No NA, NULL, or NONE",
+                            meaningZero: "Not possible in format.",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "none",
+                            definition: "Pseudonymized patient identifier",
+                            purpose: "Used to identify each patient",
+                            encoding: "None"
+                        }
+                    }, ]
+                }
+            }, {
+                subset: {
+                    id: "7",
+                    name: "Laboratory values",
+                    updated: "2/10/2021",
+                    modality: "files",
+                    format: "CSV",
+                    size: "279",
+                    featureCount: "1",
+                    parentid: "0",
+                    covmat: "None",
+                    modsys: "None",
+                    purpose: "Detailed information on laboratory values outcomes from PERSIMUNE data lake",
+                    link: "",
+                    features: [{
+                        feature: {
+                            id: "14",
+                            date: "2/10/2021",
+                            name: "Laboratory values",
+                            values: "0..inf; integer",
+                            meaningNaNullNone: "Laboratory value was not obtained",
+                            meaningZero: "Value was zero",
+                            meaningBlankVoid: "Not possible in format.",
+                            sparsity: "None",
+                            mean: "None",
+                            std: "None",
+                            modality: "None",
+                            median: "None",
+                            iqr: "None",
+                            parents: "None",
+                            unit: "Different",
+                            definition: "Biochemical and microbiological outcomes",
+                            purpose: "Many laboratory values will probably correlate to microbiomestatus. Some will be irrelevant.",
+                            encoding: "None"
                         }
                     }, ]
                 }
