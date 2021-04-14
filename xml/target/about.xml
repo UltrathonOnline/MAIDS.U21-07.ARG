@@ -1,0 +1,219 @@
+<!-- Edit the answers below to describe your dataset -->
+<!-- Do not change questions as these are defined by the MAIDS specification -->
+<root name="ABOUT">
+    <title>
+        <question>What is the title of your dataset?</question>
+        <answer>Microbiome, medication and clinical outcomes</answer>
+    </title>
+    <repository>
+        <question>What is the URL of the repository for this MAIDS description on Github?</question>
+        <answer>https://github.com/UltrathonOnline/MAIDS.U21-07.ARG</answer>
+    </repository>
+    <authors>
+        <question>Who are the dataset's authors?</question>
+        <answer>
+            <author_1>
+                <!-- Primary contact that must always be specified -->
+                <firstnames>Henrik</firstnames>
+                <lastname>Sengeloev</lastname>
+                <email>Henrik.Sengeloev@regionh.dk</email>
+            </author_1>
+            <author_2>
+                <firstnames>Jens Christian</firstnames>
+                <lastname>Noergaard</lastname>
+                <email>Jens.christian.noergaard.01@regionh.dk</email>
+            </author_2>
+        </answer>
+    </authors>
+    <scores>
+        <document>
+            <score>
+                <question>What is the document score, as defined by MAIDS?</question>
+                <answer>1</answer>
+            </score>
+            <comment>
+                <question>Why was this score given? Provide a full justification.</question>
+                <answer></answer>
+            </comment>
+            <evaluator>
+                <entityType>
+                    <question>What gave the score? [algorithm / group / committee / person]</question>
+                    <answer></answer>
+                </entityType>
+                <entityName>
+                    <question>Name of algorithm / group / committee / person who gave the score?</question>
+                    <answer></answer>
+                </entityName>
+                <contactName>
+                    <question>Who should be contacted to query the score?</question>
+                    <answer></answer>
+                </contactName>
+                <contactEmail>
+                    <question>What is the contact person's email address?</question>
+                    <answer></answer>
+                </contactEmail>
+            </evaluator>
+        </document>
+        <fairness>
+            <score>
+                <question>What is the fairness score given, as defined by MAIDS?</question>
+                <answer>?</answer>
+            </score>
+            <comment>
+                <question>Why was this score given? Provide a full justification.</question>
+                <answer></answer>
+            </comment>
+            <evaluator>
+                <entityType>
+                    <question>What gave the score? [algorithm / group / committee / person]</question>
+                    <answer></answer>
+                </entityType>
+                <entityName>
+                    <question>Name of algorithm / group / committee / person who gave the score?</question>
+                    <answer></answer>
+                </entityName>
+                <contactName>
+                    <question>Who should be contacted to query the score?</question>
+                    <answer></answer>
+                </contactName>
+                <contactEmail>
+                    <question>What is the contact person's email address?</question>
+                    <answer></answer>
+                </contactEmail>
+            </evaluator>
+        </fairness>
+        <magnitude>
+            <score>
+                <question>What is the magnitude score given, as defined by MAIDS?</question>
+                <answer>2</answer>
+            </score>
+            <comment>
+                <question>Why was this score given? Provide a full justification.</question>
+                <answer></answer>
+            </comment>
+            <evaluator>
+                <entityType>
+                    <question>What gave the score? [algorithm / group / committee / person]</question>
+                    <answer></answer>
+                </entityType>
+                <entityName>
+                    <question>Name of algorithm / group / committee / person who gave the score?</question>
+                    <answer></answer>
+                </entityName>
+                <contactName>
+                    <question>Who should be contacted to query the score?</question>
+                    <answer></answer>
+                </contactName>
+                <contactEmail>
+                    <question>What is the contact person's email address?</question>
+                    <answer></answer>
+                </contactEmail>
+            </evaluator>
+        </magnitude>
+        <synthetic>
+            <score>
+                <question>What is the synthetic score given, as defined by MAIDS?</question>
+                <answer>E</answer>
+            </score>
+            <comment>
+                <question>Why was this score given? Provide a full justification.</question>
+                <answer></answer>
+            </comment>
+            <evaluator>
+                <entityType>
+                    <question>What gave the score? [algorithm / group / committee / person]</question>
+                    <answer></answer>
+                </entityType>
+                <entityName>
+                    <question>Name of algorithm / group / committee / person who gave the score?</question>
+                    <answer></answer>
+                </entityName>
+                <contactName>
+                    <question>Who should be contacted to query the score?</question>
+                    <answer></answer>
+                </contactName>
+                <contactEmail>
+                    <question>What is the contact person's email address?</question>
+                    <answer></answer>
+                </contactEmail>
+            </evaluator>
+        </synthetic>
+    </scores>
+    <thematic>
+        <filename>thematic.jpg</filename>
+    </thematic>
+    <abstract>
+        <question>Please provide a brief abstract describing this dataset.</question>
+        <answer>Based on one of the world’s largest patient cohorts with metagenomic sequenced fecal samples we wanted to describe the interplay between previous treatment with antibiotics and presence of antibiotic resistance genes (ARGs). In order to do this, we have established a bioinformatic pipeline to map antibiotic resistance genes and we have established an automatic way of extracting data on use of antibiotics (anti-bacteria, -virus, -fungi), immunosuppressants and chemotherapy. Moreover, we have detailed data on demographics, clinical outcomes and other microbiome features such as taxonomy.</answer>
+    </abstract>
+    <usecases>
+        <question>Please provide one or more short use cases to highlight what this dataset might be used for. These should summarise the main and secondary research questions into single sentence objectives. You may also use this section to expand on possible uses not discussed in the research questions.</question>
+        <answer>
+            <usecase_1 />
+        </answer>
+    </usecases>
+    <research>
+        <main>
+            <question>Please state, in detail, the main hypothesis for which this dataset was created.</question>
+            <answer>We hypothesize that the functionality of the microbiome in each patient affects clinical and laboratory outcomes and vice versa. In addition to performing conventional taxonomic analysis, metagenomic sequencing offers the possibility to characterize the functional components of microbial samples. Statistically, this strategy offers a potentially more powerful view on the microbiome by collapsing information into functional classes shared across taxa. Biologically, this also provides more interpretable results by identifying common and well-studied processes as likely causal factors. Moreover, we have developed an automized way of extracting and cleaning data on medical ordinations from the EHR. The body of work proposed here will focus on the study of the bacterial functionality of antibiotic resistance, which is both a fundamental and contemporary issue. This approach enables us to address our main research question: Can we use ML on data on antibiotics to predict antibiotic resistance in metagenomic data? And if so, what type of antibiotic has the biggest impact on antibiotic resistance?</answer>
+        </main>
+        <secondary>
+            <question>Please state, in detail, any other hypotheses which this dataset would be able to address.</question>
+            <answer>This data offers the possibility to test many other hypotheses, and the participants in the Ultrathon are welcome to use the data to answer other scientific questions. Below is listed some of our secondary research questions: 1) Can machine learning algorithms predict clinical outcomes (ie. Infectious) based on resistome features? 2) Does adding other microbiome features such as other functionalities or taxonomy improve predictions? 3) Can we create a standardized ML-approach to clean (rule-based) and analyze (PCA, t-SNE, decision trees) raw data on medication?</answer>
+        </secondary>
+    </research>
+    <figures>
+        <question>Please entitle and provide a legend for each figure found in "./images/figures/".</question>
+        <answer>
+            <!-- Template: <figure_1><filename /><title /><legend /></figure_1> -->
+            <figure_1>
+                <filename>Picture1.png</filename>
+                <title>Microbiome, medication and clinical outcomes</title>
+                <legend>Workflow showing the processing 724 fecal samples from 279 HSCT patients with approx. 50,000 medical ordinations.</legend>
+            </figure_1>
+            <figure_2>
+                <filename>Picture2.jpg</filename>
+                <title>Antibiotic targets and subsequent resistence</title>
+                <legend>Available from the Wikipedia article on antibiotic resistence.</legend>
+            </figure_2>
+        </answer>
+    </figures>
+    <subsetAssociations>
+        <filename>subset.jpg</filename>
+        <legend>
+            <question>What is the legend for the figure describing how subsets are associated to one another?</question>
+            <answer>Seven subsets related by pseudonymized patient identifiers. Two subsets are derived from parent subsets.</answer>
+        </legend>
+    </subsetAssociations>
+    <populationSelection>
+        <rootNode>
+            <nodeid>0</nodeid> <!-- Do not change. Use nodeids as reference points. -->
+            <name />
+            <description />
+            <sources>
+                <!-- INSERT TEMPLATE SOURCES HERE  -->
+            </sources>
+        </rootNode>
+        <!-- INSERT TEMPLATE NODES HERE AND REFERENCE THEIR PARENTS -->
+    </populationSelection>
+</root>
+
+<!-- NODE TEMPLATES FOR DEFINING THE POPULATION SELECTION GRAPH 
+<node>
+    <nodeid />
+    <name />
+    <description />
+    <location />
+</node>
+
+<source>
+    <entityName />
+    <entityAddress />
+    <contactPerson />
+    <contactEmail />
+    <dataDescription />
+    <instancesContributed />
+    <beginDateCollection />
+    <endDateCollection />
+</source>
+-->
