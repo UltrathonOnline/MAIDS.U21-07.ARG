@@ -1,13 +1,29 @@
-![](banner.png?raw=true)
+<p align="center"><img width="100%" src="./banner.png" /></p>
 
-The official template for Medical AI Datasheets.
+This repository contains the MAIDS description for project U21-01. It was built by cloning the [MAIDS-Template](https://github.com/PERSIMUNE/MAIDS-Template). You will find more details about this dataset below with links to visit the website and download the PDF.
 
-*v0.2-alpha*
+>MAIDS is currently being prototyped for the [Copenhagen Ultrathon on Precision Medicine](https://ultrathon.online) where you will find more information about the event. You may also be interested in viewing other examples listed in the 2021 Ultrathon [Project Pool](https://github.com/UltrathonOnline/U21-PROJECT-POOL).
 
-MAIDS is currently being prototyped for the [Copenhagen Ultrathon on Precision Medicine](https://ultrathon.online) where you will find several examples.
+There are several ways to stay informed:
+* Visit the Ultrathon's [landing page](https://ultrathon.online) and sign up to the mailing list.
+* Follow us on [Twitter](https://twitter.com/UltrathonOnline).
+* Watch the repository for changes.
 
-This repository is intended to maintain the code and protocols for authoring new MAIDS documents based on the MAIDS specification ([maintained separately](https://github.com/PERSIMUNE-Health-Informatics/MAIDS-Specification)). The specification is included as a submodule ensuring proper tracking of provenance when forking this repo to create new MAIDS documents.
+---
 
-You can make use of this template either through the Github templating button at the top of this page or by cloning and changing the remote to your organisation or own account. Templating makes it quick and easy to get started but you will not be able to merge any updates using git. Cloning, on the other hand, will allow you to use git to update provided you know how. We plan to make updating easier in the future, but for now these are your only options. Please do not fork this repository unless you would actually like to contribute directly to this project.
+### **&#10149; U21-07**
+#### **Microbiome, medication and clinical outcomes**
+<p align="center"><img width="100%" src="./docs/images/figures/thematic.jpg" /></p>
 
-Please watch/star if you'd like to be notified of new developments.
+>Visit the [website](https://ultrathononline.github.io/MAIDS.U21-07.ARG/) for this dataset or download the formatted [PDF](./docs/maids.pdf).
+```
+Henrik Sengeløv, Jens Christian Nørgaard
+@: Rigshospitalet, Copenhagen, Denmark
+
+Based on one of the world's largest patient cohorts with metagenomic sequenced fecal samples we wanted to
+describe the interplay between previous treatment with antibiotics and presence of antibiotic resistance genes
+(ARGs). In order to do this, we have established a bioinformatic pipeline to map antibiotic resistance genes 
+and we have established an automatic way of extracting data on use of antibiotics (anti-bacteria, -virus,
+-fungi), immunosuppressants and chemotherapy. Moreover, we have detailed data on demographics, clinical
+outcomes and other microbiome features such as taxonomy.
+```
